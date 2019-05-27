@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+
+html {
+	background-image: url(../image/bg-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+body {
+	background-color: rgba(255,255,255,0.6);
+	max-width: 1170px;
+	margin: auto;
+	height: 2000px;
+	display: flex;
+	flex-direction: column;
+}
+
+header .top-row {
+	display: flex;
+	background-color: rgba(102, 107, 114,0.7);
+	justify-content: space-between;
+	max-width: 100%;
+	margin: auto;
+	height: 100px;
+}
+
+header .top-row .logo {
+	display: flex;
+	width: 40%;
+	align-items: center;
+}
+
+header .top-row .logo img {
+	width: 90px;
+	height: 90px;
+	margin: 10px 10px; 
+}
+
+header .top-row .logo-name {
+	font-family: 'Pacifico', cursive;
+	font-size: 23px;
+}
+
+header .top-row .menu {
+	display: flex;
+	width: 60%;
+}
+
+header .top-row .menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 20px;
+    overflow: hidden;	
+	border-radius: 15px;
+}
+
+header .top-row .menu ul li {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+header .top-row .menu ul li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;                               
+	background-image: -webkit-linear-gradient(#272f33,#495920);
+	font-family: 'Bad Script';
+	font-weight: bold;
+	font-size: 20px; 
+	color: #bcc5d3;
+	width: 100%;
+	height: 100%;
+
+}
+
+header .top-row .menu ul li a:hover {
+	background-image: -webkit-linear-gradient(#af9013,#fff3c4);
+	color: #096182;
+}
+
+@media (max-width: 1000px) {
+	header .top-row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+
+	header .top-row .logo {
+	width: auto;
+	}
+
+	header .top-row .menu {
+		width: 100%;
+		height: 60px;
+	}
+
+	header .top-row .menu ul {
+		width: 100%;
+		margin: 5px;
+	}
+}
+
+header .banner{
+	background-image: url(../image/banner-first.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	min-height: 630px;	
+	margin: auto;
+	overflow: hidden;
+}
+/*
+header .banner .wrap-banner {
+	background-color: rgba(200, 200, 111,0.5);
+	position: absolute;
+	top: 0;
+	max-height: : 100%;
+}
+*/
+header .banner .quote {
+	position: absolute;
+	top: 0;
+	width: auto;
+	height: auto;
+	background-color: rgba(160, 93, 111,0.5);
+	margin: 10% 10% 65% 60%;
+}
+/*
+main .biography {
+	display: flex;
+	justify-content: space-between;
+	height: 300px;
+	margin: 20px 0;
+}
+
+main .biography .biography-logo {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	padding: 7%;
+}
+
+main .biography .biography-logo img {
+	width: 100%;
+	height: auto;
+}
+
+main .biography .biography-desc {
+	width: 50%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .writings {
+	display: flex;
+	justify-content: space-between;
+	height: 300px;
+	background-color: rgba(102, 107, 114,0.7);
+	border-radius: 10px; 
+	margin: 20px;
+}
+
+main .writings .writings-logo {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	padding: 7%;
+}
+
+main .writings .writings-logo img {
+	width: 100%;
+	height: auto;
+}
+
+main .writings .writings-desc {
+	width: 50%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .gallery {
+	display: flex;
+	justify-content: space-between;
+	height: 300px;
+	margin: 20px 0;
+}
+
+main .gallery .gallery-logo {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	padding: 7%;
+}
+
+main .gallery .gallery-logo img {
+	width: 100%;
+	height: auto;
+}
+
+main .gallery .gallery-desc {
+	width: 50%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+footer {
+	height: 200px;
+	background-color: #666b72;
+}
+
+footer .contacts {
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
